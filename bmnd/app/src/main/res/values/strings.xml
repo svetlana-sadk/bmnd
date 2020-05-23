@@ -3,4 +3,6 @@
     <string name="btnDisconnect">Se déconnecter</string>
     <string name="btnConnect">Se connecter</string>
     <string name="btnCompte">Créer un compte</string>
+    <string name="MonCompte">Mon compte</string>
+    <string name="ModifierMesDonnes">Modifier mes donées</string>
 </resources>
