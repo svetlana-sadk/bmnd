@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificationProfilClient">
+
+    <TextView
+        android:id="@+id/tvNom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="109dp"
+        android:text="Nom"
+        android:textColor="#B4A9C7"
+        app:layout_constraintBottom_toTopOf="@+id/tvTelephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photoClientToEdit"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="351dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNom2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text_bmnd" />
+
+    <Button
+        android:id="@+id/btSauvegarder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="118dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onBtSauvegarderClick"
+        android:text="Sauvegarder"
+        android:textAllCaps="false"
+        android:textColor="#E6E1F8"
+        android:textColorHighlight="#8D6EC3"
+        android:textColorHint="#8D6EC3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdress" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="helena89@gmail.com"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAdress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAdress"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="1dp"
+        android:text="e-mail "
+        android:textColor="#B4A9C7"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTelephone" />
+
+    <TextView
+        android:id="@+id/tvAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="92dp"
+        android:text="Adresse"
+        android:textColor="#B4A9C7"
+        app:layout_constraintBottom_toTopOf="@+id/btSauvegarder"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <TextView
+        android:id="@+id/tvTelephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Téléphone "
+        android:textColor="#B4A9C7"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTelephone"
+        app:layout_constraintStart_toStartOf="@+id/editTextTelephone"
+        app:layout_constraintTop_toBottomOf="@+id/tvNom2" />
+
+    <ImageView
+        android:id="@+id/photoClientToEdit"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvNom2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/editTextTelephone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="06 06 25 14 89 "
+        android:textColor="#765BA5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmail"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelephone" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Helena"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photoClientToEdit"
+        app:layout_constraintTop_toBottomOf="@+id/tvNom2" />
+
+    <EditText
+        android:id="@+id/editTextAdress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="5 Rue d'Alsace Lorraine"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAdress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
