@@ -6,154 +6,126 @@
     android:layout_height="match_parent"
     tools:context=".ModificationProfilClient">
 
-    <TextView
-        android:id="@+id/tvNom2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="109dp"
-        android:text="Nom"
-        android:textColor="#B4A9C7"
-        app:layout_constraintBottom_toTopOf="@+id/tvTelephone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/photoClientToEdit"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="351dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="41dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvNom2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/text_bmnd" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            app:srcCompat="@drawable/text_bmnd" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btSauvegarder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="118dp"
         android:backgroundTint="@color/colorPrimary"
         android:onClick="onBtSauvegarderClick"
         android:text="Sauvegarder"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
         android:textColor="#E6E1F8"
         android:textColorHighlight="#8D6EC3"
         android:textColorHint="#8D6EC3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAdress" />
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="650dp" />
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_width="325dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="helena89@gmail.com"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvAdress"
-        app:layout_constraintEnd_toEndOf="@+id/editTextAdress"
-        app:layout_constraintStart_toStartOf="@+id/editTextAdress"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="399dp" />
 
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginBottom="1dp"
         android:text="e-mail "
         android:textColor="#B4A9C7"
-        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTelephone" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="360dp" />
 
     <TextView
         android:id="@+id/tvAdress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginBottom="92dp"
         android:text="Adresse"
         android:textColor="#B4A9C7"
-        app:layout_constraintBottom_toTopOf="@+id/btSauvegarder"
-        app:layout_constraintStart_toStartOf="@+id/editTextAdress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="462dp" />
 
     <TextView
         android:id="@+id/tvTelephone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
         android:text="Téléphone "
         android:textColor="#B4A9C7"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTelephone"
-        app:layout_constraintStart_toStartOf="@+id/editTextTelephone"
-        app:layout_constraintTop_toBottomOf="@+id/tvNom2" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="266dp" />
 
     <ImageView
         android:id="@+id/photoClientToEdit"
-        android:layout_width="0dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="53dp"
-        app:layout_constraintEnd_toStartOf="@+id/tvNom2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        android:layout_width="134dp"
+        android:layout_height="109dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="138dp" />
 
     <EditText
         android:id="@+id/editTextTelephone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="31dp"
+        android:layout_width="325dp"
+        android:layout_height="44dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="06 06 25 14 89 "
         android:textColor="#765BA5"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvEmail"
-        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-        app:layout_constraintTop_toBottomOf="@+id/tvTelephone" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="305dp" />
 
     <EditText
         android:id="@+id/editTextNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="50dp"
-        android:ems="10"
         android:inputType="textPersonName"
         android:text="Helena"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/photoClientToEdit"
-        app:layout_constraintTop_toBottomOf="@+id/tvNom2" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/tvNom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textColor="#B4A9C7"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="150dp" />
 
     <EditText
         android:id="@+id/editTextAdress"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="325dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="5 Rue d'Alsace Lorraine"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvAdress" />
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="501dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

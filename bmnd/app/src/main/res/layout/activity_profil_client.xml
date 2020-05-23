@@ -9,36 +9,57 @@
     android:backgroundTint="#FFFFFF"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            app:srcCompat="@drawable/text_bmnd" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvAdressResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="57dp"
+        android:layout_marginBottom="118dp"
         android:text="5 Rue d'Alsace Lorraine"
         android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btModifierDonnes"
         app:layout_constraintStart_toStartOf="@+id/tvAdress"
-        app:layout_constraintTop_toBottomOf="@+id/tvAdress" />
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailResult" />
 
     <TextView
         android:id="@+id/tvEmailResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="71dp"
         android:text="helena89@gmail.com"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/tvAdress"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAdressResult"
         app:layout_constraintStart_toStartOf="@+id/tvEmail"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTelephoneResult" />
 
     <TextView
         android:id="@+id/tvTelephoneResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="65dp"
         android:text="06 06 25 14 89 "
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/tvEmail"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmailResult"
         app:layout_constraintStart_toStartOf="@+id/tvTelephone"
         app:layout_constraintTop_toBottomOf="@+id/tvTelephone" />
 
@@ -46,56 +67,58 @@
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="14dp"
         android:text="e-mail "
         android:textColor="#B4A9C7"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/tvEmailResult"
-        app:layout_constraintStart_toStartOf="@+id/tvTelephoneResult"
-        app:layout_constraintTop_toBottomOf="@+id/tvTelephoneResult" />
+        app:layout_constraintStart_toStartOf="@+id/tvTelephoneResult" />
 
     <TextView
         android:id="@+id/tvTelephone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginBottom="9dp"
         android:text="Téléphone "
         android:textColor="#B4A9C7"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/tvTelephoneResult"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNomResult" />
+        app:layout_constraintTop_toBottomOf="@+id/photoClient" />
 
     <TextView
         android:id="@+id/tvAdress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="13dp"
         android:text="Adresse"
         android:textColor="#B4A9C7"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/tvAdressResult"
-        app:layout_constraintStart_toStartOf="@+id/tvEmailResult"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmailResult" />
+        app:layout_constraintStart_toStartOf="@+id/tvEmailResult" />
 
     <ImageView
         android:id="@+id/photoClient"
         android:layout_width="0dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginEnd="37dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvNomResult"
-        app:layout_constraintEnd_toStartOf="@+id/tvNom"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvNomResult"
+        android:layout_height="0dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTelephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNom"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <TextView
         android:id="@+id/tvNomResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="71dp"
+        android:layout_marginTop="2dp"
         android:text="Helena"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/tvTelephone"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/tvNom"
         app:layout_constraintTop_toBottomOf="@+id/tvNom" />
 
@@ -103,44 +126,32 @@
         android:id="@+id/tvNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="137dp"
         android:text="Nom"
         android:textColor="#B4A9C7"
-        app:layout_constraintBottom_toTopOf="@+id/tvNomResult"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/photoClient"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/photoClient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btModifierDonnes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="35dp"
         android:backgroundTint="@color/colorPrimary"
         android:onClick="onBtModifierDonnesClick"
         android:text="Modifier mes données"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
         android:textColor="#E6E1F8"
         android:textColorHighlight="#8D6EC3"
         android:textColorHint="#8D6EC3"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAdressResult" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="41dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvNom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/text_bmnd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
