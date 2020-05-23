@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ModificationProfilClient">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
@@ -16,116 +17,132 @@
             android:layout_width="match_parent"
             android:layout_height="109dp"
             app:srcCompat="@drawable/text_bmnd" />
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btSauvegarder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimary"
-        android:onClick="onBtSauvegarderClick"
-        android:text="Sauvegarder"
-        android:textAllCaps="true"
-        android:textColor="#E6E1F8"
-        android:textColorHighlight="#8D6EC3"
-        android:textColorHint="#8D6EC3"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="650dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="325dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="helena89@gmail.com"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="399dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="e-mail "
-        android:textColor="#B4A9C7"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="360dp" />
+            <LinearLayout
+                android:layout_width="227dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvAdress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adresse"
-        android:textColor="#B4A9C7"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="462dp" />
+                <TextView
+                    android:id="@+id/tvNom2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:text="Nom"
+                    android:textColor="#B4A9C7"
+                    android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/tvTelephone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Téléphone "
-        android:textColor="#B4A9C7"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="266dp" />
+                <EditText
+                    android:id="@+id/editTextNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:text="Helena"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-    <ImageView
-        android:id="@+id/photoClientToEdit"
-        android:layout_width="134dp"
-        android:layout_height="109dp"
-        app:srcCompat="@android:drawable/ic_menu_camera"
-        tools:layout_editor_absoluteX="250dp"
-        tools:layout_editor_absoluteY="138dp" />
+            <ImageView
+                android:id="@+id/photoClientToEdit"
+                android:layout_width="134dp"
+                android:layout_height="109dp"
+                app:srcCompat="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/editTextTelephone"
-        android:layout_width="325dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="06 06 25 14 89 "
-        android:textColor="#765BA5"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="305dp" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/editTextNom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Helena"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="182dp" />
+        <TextView
+            android:id="@+id/tvTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Téléphone "
+            android:textColor="#B4A9C7"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/tvNom2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nom"
-        android:textColor="#B4A9C7"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="150dp" />
+        <EditText
+            android:id="@+id/editTextTelephone"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="06 06 25 14 89 "
+            android:textColor="#765BA5"
+            android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/editTextAdress"
-        android:layout_width="325dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="5 Rue d'Alsace Lorraine"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="501dp" />
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="E-mail "
+            android:textColor="#B4A9C7"
+            android:textSize="24sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="325dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="helena89@gmail.com"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Adresse"
+            android:textColor="#B4A9C7"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextAdress"
+            android:layout_width="325dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="5 Rue d'Alsace Lorraine"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btSauvegarder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="onBtSauvegarderClick"
+            android:text="Sauvegarder"
+            android:textAllCaps="true"
+            android:textColor="#E6E1F8"
+            android:textColorHighlight="#8D6EC3"
+            android:textColorHint="#8D6EC3"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
