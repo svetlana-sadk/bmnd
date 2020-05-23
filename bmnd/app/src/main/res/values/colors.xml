@@ -2,10 +2,10 @@
 <resources>
     <color name="colorPrimary">#89469A</color>
     <color name="colorPrimaryDark">#66439B</color>
-    <color name="colorAccent">#F44336</color>
+    <color name="colorAccent">#C87107</color>
     <color name="orange">#D19844</color>
     <color name="prune">#680124</color>
     <color name="darkblue">#03363E</color>
-    <color name="lightblue">#049E77</color>
+    <color name="lightblue">#0A735E</color>
 
 </resources>

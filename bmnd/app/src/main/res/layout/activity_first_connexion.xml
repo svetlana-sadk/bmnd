@@ -7,7 +7,7 @@
     android:layout_weight="0"
     android:background="@drawable/bg1"
     android:orientation="vertical"
-    tools:context=".ConnexionActivity">
+    tools:context=".FirstConnexionActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -21,11 +21,58 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="40"
-
         android:gravity="center|start"
         android:orientation="vertical"
         android:paddingLeft="100px"
         android:paddingRight="100px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_Client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="Client"
+                android:textColor="@color/prune"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_Coiffeur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="Coiffeur"
+                android:textColor="@color/prune"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_Admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="Admin"
+                android:textColor="@color/prune"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_nom"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_email"
@@ -52,6 +99,20 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <EditText
+            android:id="@+id/et_Cmdp"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:ems="10"
+            android:hint="Confirmer mot de passe"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/btnConnect"
             android:layout_width="match_parent"
@@ -68,53 +129,7 @@
             android:textAllCaps="false"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Mot de passe oublié" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tv_seconnecter2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="5"
-        android:fontFamily="cursive"
-        android:text="Se connecter avec"
-        android:textAlignment="center"
-        android:textColor="@color/darkblue"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="20"
-        android:orientation="horizontal"
-        android:paddingLeft="100px"
-        android:paddingRight="100px">
-
-        <ImageButton
-            android:id="@+id/ic_fb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@mipmap/ic_fb" />
-
-        <ImageButton
-            android:id="@+id/ic_gmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@mipmap/ic_gmail" />
-
-        <ImageButton
-            android:id="@+id/ic_insta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/cardview_shadow_end_color"
-            app:srcCompat="@mipmap/ic_insta" />
+            tools:text="Déjà un compte ?" />
 
     </LinearLayout>
 

@@ -22,19 +22,24 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnDisconnect"
+            android:id="@+id/btnConnect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
             android:backgroundTint="@color/colorPrimary"
             android:onClick="onClick"
             android:text="@string/btnConnect" />
 
         <Button
-            android:id="@+id/btnConnect"
+            android:id="@+id/btnInscrire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
             android:backgroundTint="@color/colorPrimary"
             android:onClick="onClick"
-            android:text="@string/btnCompte" />
+            android:text="@string/btnConnect" />
+
     </LinearLayout>
 </LinearLayout>
