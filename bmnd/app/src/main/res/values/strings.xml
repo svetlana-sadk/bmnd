@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">bmnd</string>
+    <string name="app_name">Braid me next door</string>
     <string name="btnDisconnect">Se déconnecter</string>
     <string name="btnConnect">Se connecter</string>
     <string name="btnCompte">Créer un compte</string>
